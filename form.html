@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CiviCRM Form</title>
+</head>
+<body>
+    <h1>Name and Address</h1>
+    <form action="#" method="post">
+        <!-- CiviCRM Usage -->
+        <label>Do you use CiviCRM?</label>
+        <input type="radio" id="yes" name="civicrm" value="Yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="civicrm" value="No">
+        <label for="no">No</label><br><br>
+
+        <!-- Experience -->
+        <label for="experience">How long have you been using CiviCRM?</label>
+        <select id="experience" name="experience">
+            <option value="" selected>-- select --</option>
+            <option value="less than 1 year">Less than 1 year</option>
+            <option value="1-3 years">1-3 years</option>
+            <option value="more than 3 years">More than 3 years</option>
+        </select><br><br>
+
+        <!-- CMS -->
+        <label for="cms">Which CMS do you use?</label>
+        <select id="cms" name="cms">
+            <option value="" selected>-- select --</option>
+            <option value="WordPress">WordPress</option>
+            <option value="Drupal">Drupal</option>
+            <option value="Joomla">Joomla</option>
+        </select><br><br>
+
+        <!-- Skill Set -->
+        <label for="skills">Your skill set</label>
+        <select id="skills" name="skills">
+            <option value="" selected>-- select --</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Expert">Expert</option>
+        </select><br><br>
+
+        <!-- Personal Information -->
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="fname">First Name *</label>
+        <input type="text" id="fname" name="firstname" required><br><br>
+
+        <label for="lname">Last Name *</label>
+        <input type="text" id="lname" name="lastname" required><br><br>
+
+        <!-- Address -->
+        <label for="address">Street Address (Home)</label>
+        <input type="text" id="address" name="address"><br><br>
+
+        <label for="city">City (Home)</label>
+        <input type="text" id="city" name="city"><br><br>
+
+        <label for="postal">Postal Code (Home)</label>
+        <input type="text" id="postal" name="postal"><br><br>
+
+        <label for="country">Country (Home)</label>
+        <select id="country" name="country">
+            <option value="United States" selected>United States</option>
+            <option value="Canada">Canada</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Pakistan">Pakistan/option>
+        </select><br><br>
+
+        <label for="state">State (Home)</label>
+        <select id="state" name="state">
+            <option value="" selected>-- select --</option>
+            <option value="California">California</option>
+            <option value="New York">New York</option>
+            <option value="Texas">Texas</option>
+            <option value="Florida">Florida</option>
+        </select><br><br>
+
+        <!-- Buttons -->
+        <button type="submit">Save</button>
+        <button type="reset">Cancel</button>
+    </form>
+</body>
+</html>
